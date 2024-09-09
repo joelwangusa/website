@@ -1,100 +1,180 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Joel Wang - Innovator in Distributed Systems, AI, Blockchain & Cybersecurity</title>
-  <link rel="stylesheet" href="styles.css">
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Joel Wang - AI & Distributed Systems Expert</title>
+    <style>
+        :root {
+            --primary-color: #3498db;
+            --secondary-color: #2c3e50;
+            --text-color: #333;
+            --bg-color: #f4f4f4;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            color: var(--text-color);
+            background-color: var(--bg-color);
+        }
+        
+        header {
+            background-color: var(--primary-color);
+            color: white;
+            text-align: center;
+            padding: 2rem 0;
+        }
+        
+        nav {
+            background-color: var(--secondary-color);
+            padding: 1rem;
+        }
+        
+        nav ul {
+            list-style-type: none;
+            display: flex;
+            justify-content: center;
+        }
+        
+        nav ul li {
+            margin: 0 1rem;
+        }
+        
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+        }
+        
+        main {
+            max-width: 800px;
+            margin: 2rem auto;
+            padding: 0 1rem;
+        }
+        
+        section {
+            margin-bottom: 2rem;
+        }
+        
+        h1, h2 {
+            margin-bottom: 1rem;
+        }
+        
+        .projects {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1rem;
+        }
+        
+        .project-card {
+            background-color: white;
+            padding: 1rem;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        
+        footer {
+            background-color: var(--secondary-color);
+            color: white;
+            text-align: center;
+            padding: 1rem 0;
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+        }
+        
+        @media (max-width: 600px) {
+            nav ul {
+                flex-direction: column;
+                align-items: center;
+            }
+            
+            nav ul li {
+                margin: 0.5rem 0;
+            }
+        }
+    </style>
 </head>
 <body>
-  <!-- Header Section -->
-  <header>
+    <header>
+        <h1>Joel Wang</h1>
+        <p>AI & Distributed Systems Expert</p>
+    </header>
+    
     <nav>
-      <div class="logo">Joel Wang</div>
-      <ul>
-        <li><a href="#about">About</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#press">Press & Media</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
+        <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#expertise">Expertise</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
     </nav>
-    <section class="hero">
-      <h1>Innovator in Distributed Systems, AI, Blockchain & Cybersecurity</h1>
-      <p>Pioneering fair and secure technology solutions through entrepreneurship and innovation.</p>
-      <a href="#projects" class="btn">Explore My Work</a>
-    </section>
-  </header>
-
-  <!-- About Section -->
-  <section id="about" class="about">
-    <div class="container">
-      <div class="about-content">
-        <h2>About Me</h2>
-        <p>I'm Joel Wang, an expert in distributed systems, AI, blockchain, and cybersecurity. My journey spans from academic research to entrepreneurship, where I've built innovative solutions for secure and scalable technologies. My passion for technology fairness drives me to create impactful products that improve lives. I founded Nebulas and led the creation of PoD, and I'm now working on generative AI for legal tech.</p>
-      </div>
-      <div class="about-image">
-        <img src="profile.jpg" alt="Joel Wang">
-      </div>
-    </div>
-  </section>
-
-  <!-- Projects Section -->
-  <section id="projects" class="projects">
-    <div class="container">
-      <h2>Projects & Achievements</h2>
-      <div class="project-grid">
-        <div class="project">
-          <h3>Nebulas Blockchain</h3>
-          <p>Developed the PoD consensus algorithm, combining PBFT and game theory concepts. Nebulas handled 1 million transactions per day and attracted 2,300 developers globally.</p>
-        </div>
-        <div class="project">
-          <h3>Whova</h3>
-          <p>Led big data analysis for Whova, the #1 event management platform in the USA endorsed by G2, improving networking efficiency for event attendees through AI-driven insights.</p>
-        </div>
-        <div class="project">
-          <h3>Generative AI in Legal Tech</h3>
-          <p>Working on a generative AI platform that helps law firms save 90% of their time on legal workflows, ensuring fairness and reducing costs for average Americans.</p>
-        </div>
-        <div class="project">
-          <h3>Chrome Extension for Accessibility</h3>
-          <p>Developed a side project Chrome extension to improve web accessibility for colorblind users, aligning with my vision of using technology to promote fairness.</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Press & Media Section -->
-  <section id="press" class="press">
-    <div class="container">
-      <h2>Press & Media</h2>
-      <p>Featured in top media outlets and recognized for my contributions to blockchain, AI, and cybersecurity. Explore my press features and media mentions to learn more about my work.</p>
-      <div class="press-links">
-        <a href="#">Read Press Release</a>
-        <a href="#">Media Features</a>
-      </div>
-    </div>
-  </section>
-
-  <!-- Contact Section -->
-  <section id="contact" class="contact">
-    <div class="container">
-      <h2>Contact Me</h2>
-      <p>Feel free to get in touch for collaboration or media inquiries. I'm always open to exploring new opportunities and partnerships.</p>
-      <form action="#" method="post">
-        <input type="text" placeholder="Your Name" required>
-        <input type="email" placeholder="Your Email" required>
-        <textarea placeholder="Your Message" required></textarea>
-        <button type="submit" class="btn">Send Message</button>
-      </form>
-    </div>
-  </section>
-
-  <footer>
-    <p>&copy; 2024 Joel Wang. All Rights Reserved.</p>
-  </footer>
-
-  <script src="script.js"></script>
+    
+    <main>
+        <section id="about">
+            <h2>About Me</h2>
+            <p>Joel Wang is a leading expert in distributed systems, AI, and cybersecurity. With a passion for promoting fairness through technology, Joel has made significant contributions to blockchain, social media, and now aims to revolutionize the legal tech industry through Generative AI solutions.</p>
+        </section>
+        
+        <section id="expertise">
+            <h2>Areas of Expertise</h2>
+            <ul>
+                <li>Distributed Systems</li>
+                <li>Artificial Intelligence</li>
+                <li>Blockchain Technology</li>
+                <li>Cybersecurity</li>
+                <li>Legal Tech</li>
+                <li>Large-scale Social Media Platforms</li>
+            </ul>
+        </section>
+        
+        <section id="projects">
+            <h2>Notable Projects</h2>
+            <div class="projects">
+                <div class="project-card">
+                    <h3>Whova</h3>
+                    <p>Developed Whova, the #1 event management platform on G2, leveraging big data analysis and distributed systems.</p>
+                </div>
+                <div class="project-card">
+                    <h3>Nebulas Blockchain</h3>
+                    <p>Created the Proof of Devotion (PoD) consensus algorithm, enhancing blockchain security and fairness.</p>
+                </div>
+                <div class="project-card">
+                    <h3>Legal Tech AI</h3>
+                    <p>Currently working on revolutionizing legal tech with Generative AI solutions, aiming to streamline legal workflows and improve accessibility.</p>
+                </div>
+            </div>
+        </section>
+        
+        <section id="contact">
+            <h2>Contact</h2>
+            <p>For press inquiries, please contact:</p>
+            <p>Blair Bao<br>
+            718-883-0287<br>
+            hello@baocommunications.com</p>
+        </section>
+    </main>
+    
+    <footer>
+        <p>&copy; 2024 Joel Wang. All rights reserved.</p>
+    </footer>
+    
+    <script>
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
 </body>
 </html>
