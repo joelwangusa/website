@@ -41,10 +41,11 @@
             list-style-type: none;
             display: flex;
             justify-content: center;
+            flex-wrap: wrap;
         }
         
         nav ul li {
-            margin: 0 1rem;
+            margin: 0.5rem 1rem;
         }
         
         nav ul li a {
@@ -62,21 +63,30 @@
             margin-bottom: 2rem;
         }
         
-        h1, h2 {
+        h1, h2, h3 {
             margin-bottom: 1rem;
         }
         
-        .projects {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        .experience-item {
+            margin-bottom: 1.5rem;
+        }
+        
+        .experience-item h3 {
+            margin-bottom: 0.5rem;
+        }
+        
+        ul {
+            padding-left: 1.5rem;
+        }
+        
+        .skills {
+            display: flex;
+            flex-wrap: wrap;
             gap: 1rem;
         }
         
-        .project-card {
-            background-color: white;
-            padding: 1rem;
-            border-radius: 5px;
-            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        .skill-category {
+            flex: 1 1 200px;
         }
         
         footer {
@@ -84,9 +94,7 @@
             color: white;
             text-align: center;
             padding: 1rem 0;
-            position: absolute;
-            bottom: 0;
-            width: 100%;
+            margin-top: 2rem;
         }
         
         @media (max-width: 600px) {
@@ -110,8 +118,9 @@
     <nav>
         <ul>
             <li><a href="#about">About</a></li>
-            <li><a href="#expertise">Expertise</a></li>
-            <li><a href="#projects">Projects</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#education">Education</a></li>
             <li><a href="#contact">Contact</a></li>
         </ul>
     </nav>
@@ -119,45 +128,114 @@
     <main>
         <section id="about">
             <h2>About Me</h2>
-            <p>Joel Wang is a leading expert in distributed systems, AI, and cybersecurity. With a passion for promoting fairness through technology, Joel has made significant contributions to blockchain, social media, and now aims to revolutionize the legal tech industry through Generative AI solutions.</p>
+            <p>Joel Wang is a leading expert in distributed systems, AI, and cybersecurity. With a passion for promoting fairness through technology, Joel has made significant contributions to blockchain, social media, and now aims to revolutionize the legal tech industry through Generative AI solutions. With a strong background in scaling platforms to support millions of users, Joel balances hands-on software engineering with strategic leadership, effectively driving projects from inception to completion.</p>
         </section>
         
-        <section id="expertise">
-            <h2>Areas of Expertise</h2>
-            <ul>
-                <li>Distributed Systems</li>
-                <li>Artificial Intelligence</li>
-                <li>Blockchain Technology</li>
-                <li>Cybersecurity</li>
-                <li>Legal Tech</li>
-                <li>Large-scale Social Media Platforms</li>
-            </ul>
+        <section id="experience">
+            <h2>Professional Experience</h2>
+            
+            <div class="experience-item">
+                <h3>Technical Staff | Eve.Legal | San Mateo, CA</h3>
+                <p>July 2024 – Present</p>
+                <ul>
+                    <li>Building the product backend infrastructure for the first personalized AI tool built for the legal profession.</li>
+                </ul>
+            </div>
+            
+            <div class="experience-item">
+                <h3>CTO | GETTR USA, Inc. | NYC, NY</h3>
+                <p>July 2020 – July 2024</p>
+                <ul>
+                    <li>Built and launched a social media platform catering to millions of daily users.</li>
+                    <li>Designed and implemented scalable infrastructure and content moderation systems.</li>
+                    <li>Grew the technology department to 70 software engineers and implemented Agile methodologies.</li>
+                </ul>
+            </div>
+            
+            <div class="experience-item">
+                <h3>VP of Engineering | Nebulas.io | Beijing, China</h3>
+                <p>May 2018 – May 2020</p>
+                <ul>
+                    <li>Developed the Proof of Devotion (PoD) consensus algorithm.</li>
+                    <li>Constructed a centralized crypto exchange and directed the development of crypto wallets.</li>
+                </ul>
+            </div>
+            
+            <div class="experience-item">
+                <h3>Founding Engineer | Whova Inc. | San Diego, CA</h3>
+                <p>Nov 2014 – May 2018</p>
+                <ul>
+                    <li>Coded a SaaS platform for event organizers, now used by over 50,000 enterprise clients.</li>
+                    <li>Built a distributed web crawler and comprehensive data pipeline.</li>
+                </ul>
+            </div>
         </section>
         
-        <section id="projects">
-            <h2>Notable Projects</h2>
-            <div class="projects">
-                <div class="project-card">
-                    <h3>Whova</h3>
-                    <p>Developed Whova, the #1 event management platform on G2, leveraging big data analysis and distributed systems.</p>
+        <section id="skills">
+            <h2>Technical Skills</h2>
+            <div class="skills">
+                <div class="skill-category">
+                    <h3>Languages</h3>
+                    <ul>
+                        <li>Python</li>
+                        <li>Golang</li>
+                        <li>Java</li>
+                        <li>C/C++</li>
+                        <li>JavaScript</li>
+                        <li>TypeScript</li>
+                    </ul>
                 </div>
-                <div class="project-card">
-                    <h3>Nebulas Blockchain</h3>
-                    <p>Created the Proof of Devotion (PoD) consensus algorithm, enhancing blockchain security and fairness.</p>
+                <div class="skill-category">
+                    <h3>Frameworks</h3>
+                    <ul>
+                        <li>React.js</li>
+                        <li>Next.js</li>
+                        <li>Django</li>
+                        <li>Flask</li>
+                        <li>Express</li>
+                        <li>Hadoop</li>
+                        <li>HBase</li>
+                    </ul>
                 </div>
-                <div class="project-card">
-                    <h3>Legal Tech AI</h3>
-                    <p>Currently working on revolutionizing legal tech with Generative AI solutions, aiming to streamline legal workflows and improve accessibility.</p>
+                <div class="skill-category">
+                    <h3>Platforms</h3>
+                    <ul>
+                        <li>AWS</li>
+                        <li>Jenkins</li>
+                        <li>GitHub Action</li>
+                        <li>Docker</li>
+                        <li>Kubernetes</li>
+                        <li>Kafka</li>
+                        <li>Redis</li>
+                        <li>MongoDB</li>
+                    </ul>
                 </div>
+            </div>
+        </section>
+        
+        <section id="education">
+            <h2>Education</h2>
+            <div class="experience-item">
+                <h3>UC San Diego | San Diego, CA</h3>
+                <p>Ph.D. in Computer Science and Engineering, 2014</p>
+                <p>Research: Distributed System, System Reliability</p>
+            </div>
+            <div class="experience-item">
+                <h3>Tsinghua University | Beijing, China</h3>
+                <p>M.S. in Computer Science and Technology, 2012</p>
+                <p>Research: High Performance Computing, Parallel Programming</p>
+            </div>
+            <div class="experience-item">
+                <h3>Beijing Normal University | Beijing, China</h3>
+                <p>B.S. in Information System and Management</p>
             </div>
         </section>
         
         <section id="contact">
             <h2>Contact</h2>
-            <p>For press inquiries, please contact:</p>
-            <p>Blair Bao<br>
-            718-883-0287<br>
-            hello@baocommunications.com</p>
+            <p>Phone: +1(619)-800-1008</p>
+            <p>Email: zhuoer.wang@gmail.com</p>
+            <p>Location: Palo Alto, CA</p>
         </section>
     </main>
     
